@@ -1,3 +1,13 @@
+//disadvantages of closures
+// 1. uses lot of memory
+
+//advantages of closures
+//1. memoize,once
+//2. currying
+//3. callbacks
+//4. module patterns
+//5. helps in data hiding
+
 //Q1
 // function x(){
 //     var i = 1;
@@ -41,6 +51,7 @@ function outer(){
 
 const close = outer();
 close();
+
 
 
 
