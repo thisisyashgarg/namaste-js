@@ -1,21 +1,10 @@
 //Functions which return functions or take functions as arguments are higher order functions
+//functional programming
+// think in terms of functions
+//assign small tasks to functions
 
 let radius = [2, 3, 4];
-// function calculate (radius){
-//     let area = [];
-//     let circumference = [];
-//     let diameter = [];
-//     for( let i = 0; i < radius.length ; i++){
-//         area.push(Math.PI * radius[i] * radius[i]);
-//         circumference.push(2 * Math.PI * radius[i]);
-//         diameter.push(2 * radius[i]);
-//     }
-//     console.log(area, circumference, diameter);
-// }
-// calculate(radius);
 
-
-//Another way, functional programming
 function area (radius){
     return Math.PI * radius *radius;
 }

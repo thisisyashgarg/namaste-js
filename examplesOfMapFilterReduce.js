@@ -6,14 +6,8 @@ const users = [
 ];
 
 
-
-
-
-
 // get fullnames of all users
 console.log(users.map(x => x.firstName + ' ' + x.lastName));
-
-
 
 
 //get ages in an object 
@@ -31,18 +25,17 @@ const output = users.reduce((acc, curr) => {
 console.log(output);
 
 
-
-
 //get first name of users with age less than 60
 const output2 = users.filter(x => x.age < 60).map(x => x.firstName);
 //chaining can also be done
 console.log(output2);
 
-
-console.log(users.reduce((acc, curr) =>{
+//same thing using reduce
+const ans = users.reduce((acc, curr) =>{
      if(curr.age < 60){
         acc = curr.firstName + ' ' + acc;
      }
      return acc;
-}, []).split(' '));
+}, [])
+.split(' ');
 

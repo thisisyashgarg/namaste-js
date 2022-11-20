@@ -42,5 +42,6 @@ console.time();
 setTimeout(function (){
     console.log('callback')
     console.timeEnd();
-});
+}, 0); // even if timer is 0, the function has to go through the callback queue
+// this takes some time
 console.log('end');
